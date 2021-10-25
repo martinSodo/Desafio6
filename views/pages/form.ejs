@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <main>
+      <div class="col jumbotron m-5">
+        <div class="col jumbotron p-5 text-center m-5  bg-light">
+          <h1 class="p-3">Ingresa un mensaje</h1>
+          <form id="form2">
+            <label for="email">Correo Electrónico</label><br>
+            <input class="text-center" required placeholder="Ingresar email" name="email" type="email"/><br>
+            <div id="real-time-messages"></div>  
+            <label name="texto">Texto</label><br>
+            <input class="text-center" required placeholder="Ingresar texto" name="texto"/><br>
+            <br>
+            <input class="p-3 btn-white btn-outline-dark value="Enviar" type="submit"/>
+          </form>
+        </div>
+      </div>
+
+      
+      
+      <hr class="m-5 bg-dark">
+      <div class="col jumbotron m-5">
+        <div class="col jumbotron p-5 text-center m-5 border border-dark">
+          <h1 class="p-3">Ingrese el producto</h1>
+          <form id="form">
+            <label name="articulo">Nombre</label><br>
+            <input class="text-center" placeholder="Ingresar artículo"  name="articulo"/><br>
+            <label name="precio">Precio</label><br>
+            <input class="text-center" placeholder="Ingresar precio" name="precio" type="number" step="any"/><br>
+            <label name="imagen">Foto URL</label><br>
+            <input class="text-center p-3" placeholder="Ingresar URL"name="imagen"/><br><br>
+            <input class="p-3 btn-white btn-outline-dark value="Enviar" type="submit"/>
+            <hr>
+          </form>
+        </div>
+      </div>
+      <div id="real-time-products"></div>
+    </main>
+    <footer>
+      <%- include('../partials/footer'); %>
+    </footer>
+  </body>
+  </html>    
